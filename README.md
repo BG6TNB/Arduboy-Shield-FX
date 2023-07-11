@@ -6,6 +6,8 @@ Arduboy 是一个 8-bit 开源游戏平台，它只使用简单的硬件就构�
 
 ⚠️警告：需要注意的是 Arduino Leonardo 和 Arduino UNO 看起来十分相似，但是 UNO 采用的是 328P，在内存上相比 Leonardo 小了 0.5kb，所以社区的游戏和下面提供的教程并不能直接运行。你需要把屏幕换成 IIC 并且对社区的游戏做一些移植工作，有关这个部分的资料你可以去 Arduboy 的社区看看。
 
+![](/Image/arduboy-shield-fx.png)
+
 ## 硬件部分
 
 目前的 0.0.4 版本已经打烊测试成功了，但仍然有一些已知的问题和改进空间：
@@ -38,7 +40,7 @@ BOM：
 
 软件安装分为两个部分：
 
-1. 首先是刷入专门针对 Arduboy 优化过并且支持从 Flash Cart 启动游戏的 B o o t lo a de r
+1. 首先是刷入专门针对 Arduboy 优化过并且支持从 Flash Cart 启动游戏的 Bootloader
 2. 给 W25Q128 刷入游戏固件
 
 ### 刷写 Bootloader
@@ -55,7 +57,7 @@ https://raw.githubusercontent.com/MrBlinky/Arduboy-homemade-package/master/packa
 
 需要注意的是由于 Arduino IDE 2.x API 发生了一些变化，如果你发现安装完成之后 **Tools** 菜单下 **Board** 选择了 **Homemade Arduboy** 之后没有出现 **Programmer**，那你需要安装 Arduino IDE 1.x 版本来进行 Bootloader 的刷写工作。
 
-<img width="300" src="./Image/tools-menu.png" />
+<img width="300" src="/Image/tools-menu.png" />
 
 按照这张图调整好参数，唯一需要调整的是 **Display** 选项，如果你使用的是 0.96 寸 OLED，那么就选择 **SSD1306**，1.3 寸选择 **SH1116**，1.5 寸选择 **SSD1309**。
 
@@ -80,7 +82,7 @@ https://raw.githubusercontent.com/MrBlinky/Arduboy-homemade-package/master/packa
 9. 如果你是 1.5 寸 OLED，那么首先把 ``flashcart-writer.py`` 文件更名为 ``flashcart-writer-1309.py``
 10. 然后使用这个命令烧录游戏：``python flashcart-writer-1309.py ./the-whole-enchilada.bin``
 
-![](./Image/terminal.png)
+![](/Image/terminal.png)
 
 当你看到 **Done** 的时候，烧录便完成了，这个时候重新上电你应该就能看到 Arduboy 的菜单界面了。
 
