@@ -124,4 +124,4 @@ Flash Cart 和游戏合集来自于社区，也是用它们自己的协议。
 
 本项目 Reference 目录下面资料来源于 Arduboy，版权归 Arduboy 所有。
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本项目 Hardware 目录下的原理图和 Gerber<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，如果你需要商业授权请与我联系。
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本项目 Hardware 目录下的原理图和 Gerber 采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，如果你需要商业授权请与我联系。
